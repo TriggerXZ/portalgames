@@ -1,0 +1,44 @@
+---
+const articles = [
+    {
+        title: "¡Yuzu se rinde!",
+        description: "Nintendo gana demanda millonaria contra el emulador de Switch",
+        img: "imgs/yuzu.avif",
+        alt: "Imagen de yuzu",
+        link: "",
+    },
+    {
+        title: "Blazing Chrome",
+        description: "Otro gran homenaje a los Run and Gun",
+        img: "imgs/blazing.avif",
+        alt: "Imagen de yuzu",
+        link: "https://facebook.com",
+    },
+    {
+        title: "Article 2",
+        description: "Description 2",
+        img: "https://picsum.photos/200/300",
+        alt: "Image 2",
+        link: "https://www.google.com",
+    },
+];
+---
+
+<section class="flex flex-col items-center justify-center">
+    <article class="grid grid-cols-2 md:grid-cols-3 gap-3 md:w-[80%]">
+        {
+            articles.map((articles) => {
+                return (
+                    <div class="m-5 bg-white rounded-md text-gray-800 text-center md:max-w-30">
+                        <a href={articles.link}>
+                            <img class="rounded-t-md" src={articles.img} alt={articles.alt} />
+                            <h2 class="md:text-2xl text-xl font-bold py-3">{articles.title}</h2>
+                            <p class="text-center">{articles.description}</p>
+                        </a>
+                           
+                    </div>
+                );
+            })
+        }
+    </article>
+</section>
