@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const articles = [
+    {
+        title: "Final Fight",
+        description: "",
+        img: "imgs/finals.avif",
+        alt: "Final Fight",
+    },
+    {
+        title: "Teenage Mutant Ninja Turtles",
+        description: "",
+        img: "imgs/turtles.avif",
+        alt: "Turtles Ninja",
+    },
+    {
+        title: "Golden Axe",
+        description: "",
+        img: "imgs/golden.avif",
+        alt: "Golden Axe",
+    },
+];
+---
+
+<Layout title='About' description='Esta es la seccion que se llama About y muestra a que nos dedicamos y quienes somos'>
+    <main class="pt-12">
+        <section class="flex flex-col items-center h-50">
+            <h2 class="text-4xl text-[#e9c7a5] py-5 font-bold text-center">
+                Los mejores Beat'em Up
+            </h2>
+        </section>
+        <section class="flex flex-col items-center justify-center">
+            <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {
+                    articles.map((articles) => {
+                        return (
+                            <div class="m-5 rounded-md text-[#e9c7a5] text-center md:max-w-30">
+                                <img class="rounded-md" src={articles.img} alt={articles.alt} style= {{height: "500px", width:"100%"}}/>
+                                <h2 class="md:text-2xl text-xl font-bold pt-3">{articles.title}</h2>
+                                <p class="text-center">{articles.description}</p>
+                            </div>
+                        );
+                    })
+                }
+            </article>
+        </section>
+    </main>
+</Layout>

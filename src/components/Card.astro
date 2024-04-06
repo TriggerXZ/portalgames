@@ -1,41 +1,33 @@
 ---
 const articles = [
     {
-        title: "¡Yuzu se rinde!",
-        description: "Nintendo gana demanda millonaria contra el emulador de Switch",
-        img: "imgs/yuzu.avif",
-        alt: "Imagen de yuzu",
-        link: "",
+        title: "Beat'em Up",
+        description: "Los clasicos de 'Yo contra el barrio'",
+        img: "imgs/Capcom.avif",
+        alt: "Imagen de Beat'em Up",
+        link: "/beat-em-up",
     },
     {
-        title: "Blazing Chrome",
-        description: "Otro gran homenaje a los Run and Gun",
+        title: "Run and Gun",
+        description: "Pura bala y accion frenetica",
         img: "imgs/blazing.avif",
-        alt: "Imagen de yuzu",
-        link: "https://facebook.com",
-    },
-    {
-        title: "Article 2",
-        description: "Description 2",
-        img: "https://picsum.photos/200/300",
-        alt: "Image 2",
-        link: "https://www.google.com",
+        alt: "Imagen de Run and Gun",
+        link: "/run-and-gun",
     },
 ];
 ---
 
 <section class="flex flex-col items-center justify-center">
-    <article class="grid grid-cols-2 md:grid-cols-3 gap-3 md:w-[80%]">
+    <article class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
         {
             articles.map((articles) => {
                 return (
-                    <div class="m-5 bg-white rounded-md text-gray-800 text-center md:max-w-30">
+                    <div class="m-2 rounded-md text-[#e9c7a5] text-center md:max-w-30">
                         <a href={articles.link}>
-                            <img class="rounded-t-md" src={articles.img} alt={articles.alt} />
-                            <h2 class="md:text-2xl text-xl font-bold py-3">{articles.title}</h2>
-                            <p class="text-center">{articles.description}</p>
-                        </a>
-                           
+                            <img class="rounded-md w-full h-auto md:h-96 " src={articles.img} alt={articles.alt}/>
+                            <h2 class="md:text-2xl text-xl font-bold pt-3">{articles.title}</h2>
+                            <p class="text-center text-white">{articles.description}</p>
+                        </a>      
                     </div>
                 );
             })
