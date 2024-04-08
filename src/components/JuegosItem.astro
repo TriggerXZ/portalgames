@@ -4,10 +4,9 @@ interface Props{
     description: string;
     img: string;
     alt: string;
-    genre?: string
 }
 
-const {title, description, img, alt, genre} = Astro.props
+const {title, description, img, alt} = Astro.props
 ---
 <div class="m-5 rounded-md text-[#fe6043] text-center md:max-w-[350px]">
     <img class="rounded-md" src={img} alt={alt} style={{ height: "500px", width: "100%" }}/>
