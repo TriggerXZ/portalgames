@@ -1,40 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import JuegosItem from '../components/JuegosItem.astro';
+import HeroJuegos from '../components/HeroJuegos.astro';
 
-const JUEGOS = [
-    {
-        title: "Blazing Start",
-        description: "",
-        img: "imgs/blazin.avif",
-        alt: "Blazing Start",
-    },
-    {
-        title: "Radiant Silvergun",
-        description: "",
-        img: "imgs/radiant.avif",
-        alt: "Radiant Silvergun",
-    },
-    {
-        title: "Aero Fighters",
-        description: "",
-        img: "imgs/aero.avif",
-        alt: "Final Fight",
-    },
-];
+import { JUEGOS } from '../jsons/juegos.json';
 ---
 
 <Layout title="Fighting Games" description="Los mejores Fighting Games">
     <main class="pt-12">
-        <section class="flex flex-col items-center h-50">
-            <h2 class="text-4xl text-[#e9c7a5] py-5 font-bold text-center">
-                Clasicos Fighting Games de las Arcades
-            </h2>
-        </section>
+        <HeroJuegos title="Shoot'em Up" description="¡Libera un vendaval de balas y enfrenta el caos enérgico!"/>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    JUEGOS.map((juegos) => {
+                    JUEGOS.filter((juegos) => juegos.genre === 'Shoot\'em Up')
+                    .map((juegos) => {
                         return <JuegosItem {...juegos} />
                     })
                 }

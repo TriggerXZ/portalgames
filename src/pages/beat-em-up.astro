@@ -3,26 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import JuegosItem from '../components/JuegosItem.astro';
 import HeroJuegos from '../components/HeroJuegos.astro';
 
-const JUEGOS = [
-    {
-        title: "Final Fight",
-        description: "",
-        img: "imgs/finals.avif",
-        alt: "Final Fight",
-    },
-    {
-        title: "Teenage Mutant Ninja Turtles",
-        description: "",
-        img: "imgs/turtles.avif",
-        alt: "Turtles Ninja",
-    },
-    {
-        title: "Golden Axe",
-        description: "",
-        img: "imgs/golden.avif",
-        alt: "Golden Axe",
-    },
-];
+import {JUEGOS} from '../jsons/juegos.json';
 ---
 
 <Layout title="Beat'em Up" description="Beat'em Up">
@@ -31,9 +12,10 @@ const JUEGOS = [
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    JUEGOS.map((juegos) => {
-                        return <JuegosItem { ...juegos }/>
-                    })
+                    JUEGOS.filter((juegos) => juegos.genre === 'Beat\'em Up')
+                        .map((juegos) => {
+                            return <JuegosItem { ...juegos }/>
+                        })
                 }
             </article>
         </section>

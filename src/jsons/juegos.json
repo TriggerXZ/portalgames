@@ -1,0 +1,89 @@
+{
+    "JUEGOS": [
+        {
+            "title": "Final Fight",
+            "description": "",
+            "img": "imgs/finals.avif",
+            "alt": "Final Fight",
+            "genre": "Beat'em Up"
+        },
+        {
+            "title": "Teenage Mutant Ninja Turtles",
+            "description": "",
+            "img": "imgs/turtles.avif",
+            "alt": "Teenage Mutant Ninja Turtles",
+            "genre": "Beat'em Up"
+        },
+        {
+            "title": "Golden Axe",
+            "description": "",
+            "img": "imgs/golden.avif",
+            "alt": "Golden Axe",
+            "genre": "Beat'em Up"
+        },
+        {
+            "title": "Sunset Riders",
+            "description": "",
+            "img": "imgs/sunset.avif",
+            "alt": "Sunset Riders",
+            "genre": "Run and Gun"
+        },
+        {
+            "title": "Metal Slug X",
+            "description": "",
+            "img": "imgs/metalx.avif",
+            "alt": "Metal Slug X",
+            "genre": "Run and Gun"
+        },
+        {
+            "title": "Gunstar Heroes",
+            "description": "",
+            "img": "imgs/gunstar.avif",
+            "alt": "Gunstar Heroes",
+            "genre": "Run and Gun"
+        },
+        {
+            "title": "Street Fighter III",
+            "description": "",
+            "img": "imgs/sfiii.avif",
+            "alt": "Street Fighter III",
+            "genre": "Fighting"
+        },
+        {
+            "title": "Darkstalker",
+            "description": "",
+            "img": "imgs/darkstalker.avif",
+            "alt": "Darkstalker",
+            "genre": "Fighting"
+        },
+        {
+            "title": "Garou Mark of the Wolves",
+            "description": "",
+            "img": "imgs/garou.avif",
+            "alt": "Garou Mark of the Wolves",
+            "genre": "Fighting"
+        },
+        {
+            "title": "Blazing Start",
+            "description": "",
+            "img": "imgs/blazin.avif",
+            "alt": "Blazing Start",
+            "genre": "Shoot'em Up"
+        },
+        {
+            "title": "Radiant Silvergun",
+            "description": "",
+            "img": "imgs/radiant.avif",
+            "alt": "Radiant Silvergun",
+            "genre": "Shoot'em Up"
+        },
+        {
+            "title": "Aero Fighters",
+            "description": "",
+            "img": "imgs/aero.avif",
+            "alt": "Aero Fighters",
+            "genre": "Shoot'em Up"
+        }
+    ]
+
+}

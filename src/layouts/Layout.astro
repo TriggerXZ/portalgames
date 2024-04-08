@@ -8,6 +8,7 @@ const { title } = Astro.props;
 
 //Componentes:
 import Header from "../components/Header.astro"
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -26,6 +27,7 @@ import Header from "../components/Header.astro"
 		/>
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<Header />

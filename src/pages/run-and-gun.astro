@@ -3,26 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import JuegosItem from '../components/JuegosItem.astro';
 import HeroJuegos from '../components/HeroJuegos.astro';
 
-const articles = [
-    {
-        title: "Sunset Riders",
-        description: "",
-        img: "imgs/sunset.avif",
-        alt: "Sunset Riders",
-    },
-    {
-        title: "Metal Slug X",
-        description: "",
-        img: "imgs/metalx.avif",
-        alt: "Metal Slug X",
-    },
-    {
-        title: "Gunstar Heroes",
-        description: "",
-        img: "imgs/gunstar.avif",
-        alt: "Gunstar Heroes",
-    },
-];
+import { JUEGOS } from '../jsons/juegos.json';
+
 ---
 
 <Layout title='Run and Gun' description='Run and Gun'>
@@ -31,8 +13,9 @@ const articles = [
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    articles.map((articles) => {
-                        return <JuegosItem {...articles} />
+                JUEGOS.filter((juegos) => juegos.genre === 'Run and Gun')
+                    .map((juegos) => {
+                        return <JuegosItem {...juegos} />
                     })
                 }
             </article>
