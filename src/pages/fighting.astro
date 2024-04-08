@@ -1,20 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import JuegosItem from '../components/JuegosItem.astro';
-import HeroJuegos from '../components/HeroJuegos.astro';
 
 const JUEGOS = [
     {
-        title: "Final Fight",
+        title: "Street Fighter III",
         description: "",
-        img: "imgs/finals.avif",
-        alt: "Final Fight",
+        img: "imgs/sfiii.avif",
+        alt: "Street Fighter III",
     },
     {
-        title: "Teenage Mutant Ninja Turtles",
+        title: "Darkstalker",
         description: "",
-        img: "imgs/turtles.avif",
-        alt: "Turtles Ninja",
+        img: "imgs/darkstalker.avif",
+        alt: "Darkstalker",
     },
     {
         title: "Golden Axe",
@@ -25,14 +24,18 @@ const JUEGOS = [
 ];
 ---
 
-<Layout title="Beat'em Up" description="Beat'em Up">
+<Layout title="Fighting Games" description="Los mejores Fighting Games">
     <main class="pt-12">
-       <HeroJuegos title="Beat'em Up" description="Los clasicos de 'Yo contra el barrio'"/>
+        <section class="flex flex-col items-center h-50">
+            <h2 class="text-4xl text-[#e9c7a5] py-5 font-bold text-center">
+                Clasicos Fighting Games de las Arcades
+            </h2>
+        </section>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
                     JUEGOS.map((juegos) => {
-                        return <JuegosItem { ...juegos }/>
+                        return <JuegosItem {...juegos} />
                     })
                 }
             </article>

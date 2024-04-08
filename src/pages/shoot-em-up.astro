@@ -5,7 +5,7 @@ import HeroJuegos from '../components/HeroJuegos.astro';
 
 const JUEGOS = [
     {
-        title: "Final Fight",
+        title: "Aero Fighters",
         description: "",
         img: "imgs/finals.avif",
         alt: "Final Fight",
@@ -27,12 +27,12 @@ const JUEGOS = [
 
 <Layout title="Beat'em Up" description="Beat'em Up">
     <main class="pt-12">
-       <HeroJuegos title="Beat'em Up" description="Los clasicos de 'Yo contra el barrio'"/>
+        <HeroJuegos title="Shoot'em Up" description="¡Libera un vendaval de balas y enfrenta el caos enérgico!"/>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
                     JUEGOS.map((juegos) => {
-                        return <JuegosItem { ...juegos }/>
+                        return <JuegosItem {...juegos}/>
                     })
                 }
             </article>

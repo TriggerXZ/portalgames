@@ -7,8 +7,7 @@ interface Props {
 const { title } = Astro.props;
 
 //Componentes:
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro"
 ---
 
 <!doctype html>
@@ -37,6 +36,11 @@ import Footer from "../components/Footer.astro";
 	:root {
            background-color: #3e433e;
         }
+	
+	html {
+		scroll-behavior: smooth;
+	}	
+
 	body {
 		font-family: "Pixelify Sans", sans-serif;
 	}

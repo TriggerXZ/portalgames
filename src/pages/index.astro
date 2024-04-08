@@ -1,16 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Hero from '../components/Hero.astro';
----
-
-<Layout
+import Genres from '../components/Genres.astro';
 ---
 
 <Layout title="Portal Games" >
 	<main class="m-5 rounded-md flex flex-col">
-		<Hero/>
-		<Card/>
+		<Hero title="Los clasicos de las Arcades" description='Te invitamos a explorar una colección incomparable de juegos que han cautivado a generaciones.¡Únete a nosotros y sé parte de esta increíble aventura retro!'/>
+		<Genres/>
 	</main>
 </Layout>
 
