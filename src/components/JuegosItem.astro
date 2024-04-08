@@ -8,7 +8,7 @@ interface Props{
 
 const {title, description, img, alt} = Astro.props
 ---
-<div class="m-5 rounded-md text-[#e9c7a5] text-center md:max-w-30">
+<div class="m-5 rounded-md text-[#fe6043] text-center md:max-w-[350px]">
     <img class="rounded-md" src={img} alt={alt} style={{ height: "500px", width: "100%" }}/>
     <h2 class="md:text-2xl text-xl font-bold pt-3">{title}</h2>
     <p class="text-center">{description}</p>
