@@ -12,7 +12,7 @@ const {title, description, img, alt, link} = Astro.props
 
 <div class="m-2 rounded-md text-[#fe6043] text-center md:max-w-30">
     <a href={link}>
-        <img class="rounded-md w-full h-auto md:h-80 " src={img} alt={alt}/>
+        <img class="rounded-md w-full h-auto md:h-80 " src={img}?timestapm={Date.now()} alt={alt}/>
         <h2 class="md:text-2xl text-xl font-bold pt-3">{title}</h2>
         <p class="text-center text-white">{description}</p>
     </a>      
