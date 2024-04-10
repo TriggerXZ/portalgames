@@ -36,9 +36,9 @@ const GENRES = [
 <section id="genres" class="flex flex-col items-center justify-center">
     <article class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
         {
-            GENRES.map((genres) => {
-                return <CardItem {...genres} />
-            })
+            GENRES.map((genres) => (
+                 <CardItem {...genres} />
+            ))
         }
     </article>
 </section>
