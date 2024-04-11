@@ -1,5 +1,5 @@
 ---
-import CardItem from "./GenresItem.astro";
+import GenresItem from "./GenresItem.astro";
 const GENRES = [
     {
         title: "Beat'em Up",
@@ -37,7 +37,7 @@ const GENRES = [
     <article class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
         {
             GENRES.map((genres) => (
-                 <CardItem {...genres} />
+                 <GenresItem {...genres} />
             ))
         }
     </article>
