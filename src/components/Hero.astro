@@ -6,14 +6,16 @@ interface Props {
 
 const { title, description } = Astro.props
 ---
+<main class="m-5 rounded-md flex flex-col">
+    <section class="flex pt-12 flex-col justify-center items-center h-50 md:h-[100vh]">
+        <div class="flex flex-col justify-center items-center md:w-[50%]">
+            <h2 class="text-4xl md:text-7xl text-[#e9c7a5] py-3 font-bold justify-center items-center text-center">
+                {title}
+            </h2>
+            <p class="text-xl md:text-2xl text-white py-3 font-bold justify-center items-center text-center">
+                {description}
+            </p>
+        </div>
+    </section>
+</main>
 
-<section class="flex pt-12 flex-col justify-center items-center h-50 md:h-[100vh]">
-    <div class="flex flex-col justify-center items-center md:w-[50%]">
-        <h2 class="text-4xl md:text-7xl text-[#e9c7a5] py-3 font-bold justify-center items-center text-center">
-            {title}
-        </h2>
-        <p class="text-xl md:text-2xl text-white py-3 font-bold justify-center items-center text-center">
-            {description}
-        </p>
-    </div>
-</section>
