@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import JuegosItem from '../components/JuegosItem.astro';
 import HeroJuegos from '../components/HeroJuegos.astro';
 
-import { JUEGOS } from '../jsons/juegos.json';
+import { GENRES } from '../jsons/juegos.json';
 ---
 
 <Layout title="Shoot'em Up" description="Los mejores Fighting Games">
@@ -12,10 +12,12 @@ import { JUEGOS } from '../jsons/juegos.json';
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    JUEGOS.filter((juego) => juego.genre === 'Shoot\'em Up')
-                    .map((juego) => (
-                     <JuegosItem {...juego} />
-                    ))
+                    GENRES.map((genre) => {
+                        if (genre.title === "Shoot'em Up" && genre.JUEGOS)
+                            return genre.JUEGOS.map((juego) => (
+                                <JuegosItem {...juego} />
+                            ));
+                    })
                 }
             </article>
         </section>

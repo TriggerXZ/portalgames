@@ -5,13 +5,13 @@ import { GENRES } from '../../jsons/juegos.json'
 
 export async function getStaticPaths() {
     return GENRES.map((genre) => ({
-        params: { id: genre.id }
+        params: { title: genre.title }
     }))
 }
 
-const { id } = Astro.params
+const { title } = Astro.params
 ---
 
 <Layout title="Generos">
-    <h1>Este es el genero: {id}</h1>
+    <h1>Este es el genero: {title}</h1>
 </Layout>

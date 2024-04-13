@@ -1,3 +1,5 @@
 {
-    "livePreview.defaultPreviewPath": "/dist/index.html"
+    "livePreview.defaultPreviewPath": "/dist/index.html",
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }

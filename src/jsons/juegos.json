@@ -1,20 +1,58 @@
 {
     "GENRES": [
         {
-            "id": "1",
             "title": "Beat'em Up",
             "description": "Los clasicos de 'Yo contra el barrio'",
             "img": "/imgs/Capcom.avif",
             "alt": "Imagen de Beat'em Up",
-            "link": "/beat-em-up.html"
+            "link": "/beat-em-up.html",
+            "JUEGOS": [
+                {
+                    "title": "Final Fight",
+                    "description": "",
+                    "img": "/imgs/finals.avif",
+                    "alt": "Final Fight"
+                },
+                {
+                    "title": "Teenage Mutant Ninja Turtles",
+                    "description": "",
+                    "img": "/imgs/turtles.avif",
+                    "alt": "Teenage Mutant Ninja Turtles"
+                },
+                {
+                    "title": "Golden Axe",
+                    "description": "",
+                    "img": "/imgs/golden.avif",
+                    "alt": "Golden Axe"
+                }
+            ]
         },
         {
-            "id": "2",
             "title": "Run and Gun",
             "description": "¡Embárcate en una frenética carrera de balas y acción!",
             "img": "/imgs/blazing.avif",
             "alt": "Imagen de Run and Gun",
-            "link": "/run-and-gun.html"
+            "link": "/run-and-gun.html",
+            "JUEGOS": [
+                {
+                    "title": "Sunset Riders",
+                    "description": "",
+                    "img": "/imgs/sunset.avif",
+                    "alt": "Sunset Riders"
+                },
+                {
+                    "title": "Metal Slug X",
+                    "description": "",
+                    "img": "/imgs/metalx.avif",
+                    "alt": "Metal Slug X"
+                },
+                {
+                    "title": "Gunstar Heroes",
+                    "description": "",
+                    "img": "/imgs/gunstar.avif",
+                    "alt": "Gunstar Heroes"
+                }
+            ]
         },
         {
             "id": "3",
@@ -22,7 +60,30 @@
             "description": "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
             "img": "/imgs/shootem.avif",
             "alt": "Imagen de Shoot'em Up",
-            "link": "/shoot-em-up.html"
+            "link": "/shoot-em-up.html",
+            "JUEGOS": [
+                {
+                    "title": "Blazing Start",
+                    "description": "",
+                    "img": "/imgs/blazin.avif",
+                    "alt": "Blazing Start",
+                    "genre": "Shoot'em Up"
+                },
+                {
+                    "title": "Radiant Silvergun",
+                    "description": "",
+                    "img": "/imgs/radiant.avif",
+                    "alt": "Radiant Silvergun",
+                    "genre": "Shoot'em Up"
+                },
+                {
+                    "title": "Aero Fighters",
+                    "description": "",
+                    "img": "/imgs/aero.avif",
+                    "alt": "Aero Fighters",
+                    "genre": "Shoot'em Up"
+                }
+            ]
         },
         {
             "id": "4",
@@ -30,93 +91,27 @@
             "description": "Domina la arena con los clasicos de la lucha",
             "img": "/imgs/fighting.avif",
             "alt": "Imagen de Fighting",
-            "link": "/fighting.html"
-        }
-    ],
-    "JUEGOS": [
-        {
-            "title": "Final Fight",
-            "description": "",
-            "img": "/imgs/finals.avif",
-            "alt": "Final Fight",
-            "genre": "Beat'em Up"
-        },
-        {
-            "title": "Teenage Mutant Ninja Turtles",
-            "description": "",
-            "img": "/imgs/turtles.avif",
-            "alt": "Teenage Mutant Ninja Turtles",
-            "genre": "Beat'em Up"
-        },
-        {
-            "title": "Golden Axe",
-            "description": "",
-            "img": "/imgs/golden.avif",
-            "alt": "Golden Axe",
-            "genre": "Beat'em Up"
-        },
-        {
-            "title": "Sunset Riders",
-            "description": "",
-            "img": "/imgs/sunset.avif",
-            "alt": "Sunset Riders",
-            "genre": "Run and Gun"
-        },
-        {
-            "title": "Metal Slug X",
-            "description": "",
-            "img": "/imgs/metalx.avif",
-            "alt": "Metal Slug X",
-            "genre": "Run and Gun"
-        },
-        {
-            "title": "Gunstar Heroes",
-            "description": "",
-            "img": "/imgs/gunstar.avif",
-            "alt": "Gunstar Heroes",
-            "genre": "Run and Gun"
-        },
-        {
-            "title": "Street Fighter III",
-            "description": "",
-            "img": "/imgs/sfiii.avif",
-            "alt": "Street Fighter III",
-            "genre": "Fighting"
-        },
-        {
-            "title": "Darkstalker",
-            "description": "",
-            "img": "/imgs/darkstalker.avif",
-            "alt": "Darkstalker",
-            "genre": "Fighting"
-        },
-        {
-            "title": "Garou Mark of the Wolves",
-            "description": "",
-            "img": "/imgs/garou.avif",
-            "alt": "Garou Mark of the Wolves",
-            "genre": "Fighting"
-        },
-        {
-            "title": "Blazing Start",
-            "description": "",
-            "img": "/imgs/blazin.avif",
-            "alt": "Blazing Start",
-            "genre": "Shoot'em Up"
-        },
-        {
-            "title": "Radiant Silvergun",
-            "description": "",
-            "img": "/imgs/radiant.avif",
-            "alt": "Radiant Silvergun",
-            "genre": "Shoot'em Up"
-        },
-        {
-            "title": "Aero Fighters",
-            "description": "",
-            "img": "/imgs/aero.avif",
-            "alt": "Aero Fighters",
-            "genre": "Shoot'em Up"
+            "link": "/fighting.html",
+            "JUEGOS": [
+                {
+                    "title": "Street Fighter III",
+                    "description": "",
+                    "img": "/imgs/sfiii.avif",
+                    "alt": "Street Fighter III"
+                },
+                {
+                    "title": "Darkstalker",
+                    "description": "",
+                    "img": "/imgs/darkstalker.avif",
+                    "alt": "Darkstalker"
+                },
+                {
+                    "title": "Garou Mark of the Wolves",
+                    "description": "",
+                    "img": "/imgs/garou.avif",
+                    "alt": "Garou Mark of the Wolves"
+                }
+            ]
         }
     ]
 }
