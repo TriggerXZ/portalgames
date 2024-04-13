@@ -13,7 +13,7 @@ import { GENRES } from '../jsons/juegos.json';
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
                    GENRES.map(genre => {
-                       if (genre.title === 'Fighting' && genre.JUEGOS) {
+                       if (genre.genre === 'Fighting' && genre.JUEGOS) {
                            return genre.JUEGOS.map(juego => (
                                <JuegosItem {...juego} />
                            ))

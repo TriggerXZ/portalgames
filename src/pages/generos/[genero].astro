@@ -1,9 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import JuegosItem from '../components/JuegosItem.astro';
-import HeroJuegos from '../components/HeroJuegos.astro';
+import Layout from "../../layouts/Layout.astro";
+import HeroJuegos from "../../components/HeroJuegos.astro";
+import JuegosItem from "../../components/JuegosItem.astro";
 
-import { GENRES } from '../jsons/juegos.json';
+import { GENRES } from '../../jsons/juegos.json'
+
+export async function getStaticPaths() {
+    return [
+        { params: { genero: 'beat-em-up' }}
+    ]
+}
+
 ---
 
 <Layout title="Shoot'em Up" description="Los mejores Fighting Games">

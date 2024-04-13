@@ -1,11 +1,11 @@
 {
     "GENRES": [
         {
-            "title": "Beat'em Up",
+            "genre": "Beat'em Up",
             "description": "Los clasicos de 'Yo contra el barrio'",
             "img": "/imgs/Capcom.avif",
             "alt": "Imagen de Beat'em Up",
-            "link": "/beat-em-up.html",
+            "link": "beat-em-up",
             "JUEGOS": [
                 {
                     "title": "Final Fight",
@@ -28,11 +28,11 @@
             ]
         },
         {
-            "title": "Run and Gun",
+            "genre": "Run and Gun",
             "description": "¡Embárcate en una frenética carrera de balas y acción!",
             "img": "/imgs/blazing.avif",
             "alt": "Imagen de Run and Gun",
-            "link": "/run-and-gun.html",
+            "link": "/run-and-gun",
             "JUEGOS": [
                 {
                     "title": "Sunset Riders",
@@ -55,43 +55,38 @@
             ]
         },
         {
-            "id": "3",
-            "title": "Shoot'em Up",
+            "genre": "Shoot'em Up",
             "description": "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
             "img": "/imgs/shootem.avif",
             "alt": "Imagen de Shoot'em Up",
-            "link": "/shoot-em-up.html",
+            "link": "/shoot-em-up",
             "JUEGOS": [
                 {
                     "title": "Blazing Start",
                     "description": "",
                     "img": "/imgs/blazin.avif",
-                    "alt": "Blazing Start",
-                    "genre": "Shoot'em Up"
+                    "alt": "Blazing Start"
                 },
                 {
                     "title": "Radiant Silvergun",
                     "description": "",
                     "img": "/imgs/radiant.avif",
-                    "alt": "Radiant Silvergun",
-                    "genre": "Shoot'em Up"
+                    "alt": "Radiant Silvergun"
                 },
                 {
                     "title": "Aero Fighters",
                     "description": "",
                     "img": "/imgs/aero.avif",
-                    "alt": "Aero Fighters",
-                    "genre": "Shoot'em Up"
+                    "alt": "Aero Fighters"
                 }
             ]
         },
         {
-            "id": "4",
-            "title": "Fighting",
+            "genre": "Fighting",
             "description": "Domina la arena con los clasicos de la lucha",
             "img": "/imgs/fighting.avif",
             "alt": "Imagen de Fighting",
-            "link": "/fighting.html",
+            "link": "/fighting",
             "JUEGOS": [
                 {
                     "title": "Street Fighter III",
