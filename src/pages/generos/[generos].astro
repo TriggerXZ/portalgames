@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { GENRES } from '../../jsons/juegos.json'
+
+export async function getStaticPaths() {
+    return GENRES.map((genre) => ({
+        params: { id: genre.id }
+    }))
+}
+
+const { id } = Astro.params
+---
+
+<Layout title="Generos">
+    <h1>Este es el genero: {id}</h1>
+</Layout>

@@ -1,0 +1,18 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { JUEGOS } from '../../jsons/juegos.json'
+
+export async function getStaticPaths() {
+    return JUEGOS.map((juego) => ({
+        params: { juego },
+    }))
+}
+
+const { juego } = Astro.params
+---
+
+<Layout title={juego.title}>
+    <h1>{juego.title}</h1>
+    <p>T{juego.description}</p>
+</Layout>

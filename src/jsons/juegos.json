@@ -1,4 +1,38 @@
 {
+    "GENRES": [
+        {
+            "id": "1",
+            "title": "Beat'em Up",
+            "description": "Los clasicos de 'Yo contra el barrio'",
+            "img": "/imgs/Capcom.avif",
+            "alt": "Imagen de Beat'em Up",
+            "link": "/beat-em-up.html"
+        },
+        {
+            "id": "2",
+            "title": "Run and Gun",
+            "description": "¡Embárcate en una frenética carrera de balas y acción!",
+            "img": "/imgs/blazing.avif",
+            "alt": "Imagen de Run and Gun",
+            "link": "/run-and-gun.html"
+        },
+        {
+            "id": "3",
+            "title": "Shoot'em Up",
+            "description": "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
+            "img": "/imgs/shootem.avif",
+            "alt": "Imagen de Shoot'em Up",
+            "link": "/shoot-em-up.html"
+        },
+        {
+            "id": "4",
+            "title": "Fighting",
+            "description": "Domina la arena con los clasicos de la lucha",
+            "img": "/imgs/fighting.avif",
+            "alt": "Imagen de Fighting",
+            "link": "/fighting.html"
+        }
+    ],
     "JUEGOS": [
         {
             "title": "Final Fight",
@@ -85,5 +119,4 @@
             "genre": "Shoot'em Up"
         }
     ]
-
 }

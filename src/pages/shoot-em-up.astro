@@ -12,9 +12,9 @@ import { JUEGOS } from '../jsons/juegos.json';
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    JUEGOS.filter((juegos) => juegos.genre === 'Shoot\'em Up')
-                    .map((juegos) => (
-                     <JuegosItem {...juegos} />
+                    JUEGOS.filter((juego) => juego.genre === 'Shoot\'em Up')
+                    .map((juego) => (
+                     <JuegosItem {...juego} />
                     ))
                 }
             </article>
