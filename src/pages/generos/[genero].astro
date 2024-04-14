@@ -3,27 +3,30 @@ import Layout from "../../layouts/Layout.astro";
 import HeroJuegos from "../../components/HeroJuegos.astro";
 import JuegosItem from "../../components/JuegosItem.astro";
 
-import { GENRES } from '../../jsons/juegos.json'
+import { GENRES } from '../../../juegos.json'
 
 export async function getStaticPaths() {
-    return [
-        { params: { genero: 'beat-em-up' }}
-    ]
+    return GENRES.map((genre) => ({
+        params: { genero: genre.genre },
+        props: { ...genre }
+    }))
 }
 
+const { genero } = Astro.params
 ---
 
-<Layout title="Shoot'em Up" description="Los mejores Fighting Games">
+<Layout title={genero} description=`Los mejores ${genero}`>
     <main class="pt-12">
-        <HeroJuegos title="Shoot'em Up" description="¡Libera un vendaval de balas y enfrenta el caos enérgico!"/>
+        <HeroJuegos title={genero} description={`Los mejores ${genero}`}/>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
-                    GENRES.map((genre) => {
-                        if (genre.genre === "Shoot'em Up" && genre.JUEGOS)
-                            return genre.JUEGOS.map((juego) => (
+                    GENRES.map(genre => {
+                        if (genre.genre === genero && genre.JUEGOS) {
+                            return genre.JUEGOS.map(juego => (
                                 <JuegosItem {...juego} />
-                            ));
+                            ))
+                        }
                     })
                 }
             </article>

@@ -5,7 +5,7 @@
             "description": "Los clasicos de 'Yo contra el barrio'",
             "img": "/imgs/Capcom.avif",
             "alt": "Imagen de Beat'em Up",
-            "link": "beat-em-up",
+            "link": "generos/beat-em-up",
             "JUEGOS": [
                 {
                     "title": "Final Fight",
@@ -32,7 +32,7 @@
             "description": "¡Embárcate en una frenética carrera de balas y acción!",
             "img": "/imgs/blazing.avif",
             "alt": "Imagen de Run and Gun",
-            "link": "/run-and-gun",
+            "link": "generos/run-and-gun",
             "JUEGOS": [
                 {
                     "title": "Sunset Riders",
@@ -59,7 +59,7 @@
             "description": "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
             "img": "/imgs/shootem.avif",
             "alt": "Imagen de Shoot'em Up",
-            "link": "/shoot-em-up",
+            "link": "generos/shoot-em-up",
             "JUEGOS": [
                 {
                     "title": "Blazing Start",
@@ -86,7 +86,7 @@
             "description": "Domina la arena con los clasicos de la lucha",
             "img": "/imgs/fighting.avif",
             "alt": "Imagen de Fighting",
-            "link": "/fighting",
+            "link": "generos/fighting",
             "JUEGOS": [
                 {
                     "title": "Street Fighter III",
