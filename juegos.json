@@ -1,7 +1,7 @@
 {
     "GENRES": [
         {
-            "genre": "Beat'em Up",
+            "genre": "beat-em-up",
             "description": "Los clasicos de 'Yo contra el barrio'",
             "img": "/imgs/Capcom.avif",
             "alt": "Imagen de Beat'em Up",

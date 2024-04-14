@@ -6,25 +6,28 @@ import JuegosItem from "../../components/JuegosItem.astro";
 import { GENRES } from '../../../juegos.json'
 
 export async function getStaticPaths() {
-    return GENRES.map((genre) => ({
-        params: { genero: genre.genre },
-        props: { ...genre }
+    return GENRES.map((generos, ) => ({
+        params: { genero: generos.genre,
+            description: generos.description  },
+
     }))
 }
 
-const { genero } = Astro.params
+const { genero, description } = Astro.params
+
+console.log(description)
 ---
 
-<Layout title={genero} description=`Los mejores ${genero}`>
+<Layout title={genero} >
     <main class="pt-12">
-        <HeroJuegos title={genero} description={`Los mejores ${genero}`}/>
+        <HeroJuegos title={genero} description={`Los mejores ${description} de ${genero}`}/>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
                     GENRES.map(genre => {
                         if (genre.genre === genero && genre.JUEGOS) {
                             return genre.JUEGOS.map(juego => (
-                                <JuegosItem {...juego} />
+                                <JuegosItem {...juego} title={juego.title} />
                             ))
                         }
                     })
