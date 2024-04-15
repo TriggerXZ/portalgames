@@ -1,29 +1,32 @@
 {
     "GENRES": [
         {
-            "genre": "beat-em-up",
+            "genre": "Beat'em Up",
             "description": "Los clasicos de 'Yo contra el barrio'",
             "img": "/imgs/Capcom.avif",
             "alt": "Imagen de Beat'em Up",
-            "link": "generos/beat-em-up",
+            "link": "generos/Beat'em Up",
             "JUEGOS": [
                 {
                     "title": "Final Fight",
                     "description": "",
                     "img": "/imgs/finals.avif",
-                    "alt": "Final Fight"
+                    "alt": "Final Fight",
+                    "link": "generos/juegos/final-fight"
                 },
                 {
                     "title": "Teenage Mutant Ninja Turtles",
                     "description": "",
                     "img": "/imgs/turtles.avif",
-                    "alt": "Teenage Mutant Ninja Turtles"
+                    "alt": "Teenage Mutant Ninja Turtles",
+                    "link": "generos/juegos/"
                 },
                 {
                     "title": "Golden Axe",
                     "description": "",
                     "img": "/imgs/golden.avif",
-                    "alt": "Golden Axe"
+                    "alt": "Golden Axe",
+                    "link": "generos/juegos/golden-axe"
                 }
             ]
         },
@@ -32,25 +35,28 @@
             "description": "¡Embárcate en una frenética carrera de balas y acción!",
             "img": "/imgs/blazing.avif",
             "alt": "Imagen de Run and Gun",
-            "link": "generos/run-and-gun",
+            "link": "generos/Run and Gun",
             "JUEGOS": [
                 {
                     "title": "Sunset Riders",
                     "description": "",
                     "img": "/imgs/sunset.avif",
-                    "alt": "Sunset Riders"
+                    "alt": "Sunset Riders",
+                    "link": "generos/juegos/sunsetriders"
                 },
                 {
                     "title": "Metal Slug X",
                     "description": "",
                     "img": "/imgs/metalx.avif",
-                    "alt": "Metal Slug X"
+                    "alt": "Metal Slug X",
+                    "link": "generos/juegos/metal-slug-x"
                 },
                 {
                     "title": "Gunstar Heroes",
                     "description": "",
                     "img": "/imgs/gunstar.avif",
-                    "alt": "Gunstar Heroes"
+                    "alt": "Gunstar Heroes",
+                    "link": "generos/juegos/gunstar-heroes"
                 }
             ]
         },
@@ -59,25 +65,28 @@
             "description": "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
             "img": "/imgs/shootem.avif",
             "alt": "Imagen de Shoot'em Up",
-            "link": "generos/shoot-em-up",
+            "link": "generos/Shoot'em Up",
             "JUEGOS": [
                 {
                     "title": "Blazing Start",
                     "description": "",
                     "img": "/imgs/blazin.avif",
-                    "alt": "Blazing Start"
+                    "alt": "Blazing Start",
+                    "link": "generos/juegos/blazing-start"
                 },
                 {
                     "title": "Radiant Silvergun",
                     "description": "",
                     "img": "/imgs/radiant.avif",
-                    "alt": "Radiant Silvergun"
+                    "alt": "Radiant Silvergun",
+                    "link": "generos/juegos/radiant-silvergun"
                 },
                 {
                     "title": "Aero Fighters",
                     "description": "",
                     "img": "/imgs/aero.avif",
-                    "alt": "Aero Fighters"
+                    "alt": "Aero Fighters",
+                    "link": "generos/juegos/aero-fighters"
                 }
             ]
         },
@@ -86,25 +95,28 @@
             "description": "Domina la arena con los clasicos de la lucha",
             "img": "/imgs/fighting.avif",
             "alt": "Imagen de Fighting",
-            "link": "generos/fighting",
+            "link": "generos/Fighting",
             "JUEGOS": [
                 {
                     "title": "Street Fighter III",
                     "description": "",
                     "img": "/imgs/sfiii.avif",
-                    "alt": "Street Fighter III"
+                    "alt": "Street Fighter III",
+                    "link": "generos/juegos/street-fighter-iii"
                 },
                 {
                     "title": "Darkstalker",
                     "description": "",
                     "img": "/imgs/darkstalker.avif",
-                    "alt": "Darkstalker"
+                    "alt": "Darkstalker",
+                    "link": "generos/juegos/darkstalker"
                 },
                 {
                     "title": "Garou Mark of the Wolves",
                     "description": "",
                     "img": "/imgs/garou.avif",
-                    "alt": "Garou Mark of the Wolves"
+                    "alt": "Garou Mark of the Wolves",
+                    "link": "generos/juegos/garou-mark-of-the-wolves"
                 }
             ]
         }

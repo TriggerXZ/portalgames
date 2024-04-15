@@ -5,29 +5,27 @@ import JuegosItem from "../../components/JuegosItem.astro";
 
 import { GENRES } from '../../../juegos.json'
 
-export async function getStaticPaths() {
-    return GENRES.map((generos, ) => ({
-        params: { genero: generos.genre,
-            description: generos.description  },
 
-    }))
+const { genero } = Astro.params
+
+let juegos
+if (genero) {
+    juegos = GENRES.find(genre => genre.genre === genero)
 }
 
-const { genero, description } = Astro.params
 
-console.log(description)
 ---
 
-<Layout title={genero} >
+<Layout title=`${genero}` description=`Disfruta conociendo y jugando los mejores ${genero}`>
     <main class="pt-12">
-        <HeroJuegos title={genero} description={`Los mejores ${description} de ${genero}`}/>
+        <HeroJuegos title=`${juegos?.genre}` description={`${juegos?.description}`}/>
         <section class="flex flex-col items-center justify-center">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {
                     GENRES.map(genre => {
                         if (genre.genre === genero && genre.JUEGOS) {
                             return genre.JUEGOS.map(juego => (
-                                <JuegosItem {...juego} title={juego.title} />
+                                <JuegosItem {...juego} />
                             ))
                         }
                     })
