@@ -11,21 +11,21 @@
                     "title": "Final Fight",
                     "description": "",
                     "img": "/imgs/finals.avif",
-                    "alt": "Final Fight",
+                    "alt": "Portada Final Fight",
                     "link": "generos/juegos/final-fight"
                 },
                 {
                     "title": "Teenage Mutant Ninja Turtles",
                     "description": "",
                     "img": "/imgs/turtles.avif",
-                    "alt": "Teenage Mutant Ninja Turtles",
+                    "alt": "Portada Teenage Mutant Ninja Turtles",
                     "link": "generos/juegos/"
                 },
                 {
                     "title": "Golden Axe",
                     "description": "",
                     "img": "/imgs/golden.avif",
-                    "alt": "Golden Axe",
+                    "alt": "Portada Golden Axe",
                     "link": "generos/juegos/golden-axe"
                 }
             ]
@@ -41,21 +41,21 @@
                     "title": "Sunset Riders",
                     "description": "",
                     "img": "/imgs/sunset.avif",
-                    "alt": "Sunset Riders",
+                    "alt": "Portada Sunset Riders",
                     "link": "generos/juegos/sunsetriders"
                 },
                 {
                     "title": "Metal Slug X",
                     "description": "",
                     "img": "/imgs/metalx.avif",
-                    "alt": "Metal Slug X",
+                    "alt": "Portada Metal Slug X",
                     "link": "generos/juegos/metal-slug-x"
                 },
                 {
                     "title": "Gunstar Heroes",
                     "description": "",
                     "img": "/imgs/gunstar.avif",
-                    "alt": "Gunstar Heroes",
+                    "alt": "Portada Gunstar Heroes",
                     "link": "generos/juegos/gunstar-heroes"
                 }
             ]
@@ -71,21 +71,21 @@
                     "title": "Blazing Start",
                     "description": "",
                     "img": "/imgs/blazin.avif",
-                    "alt": "Blazing Start",
+                    "alt": "Portada Blazing Start",
                     "link": "generos/juegos/blazing-start"
                 },
                 {
                     "title": "Radiant Silvergun",
                     "description": "",
                     "img": "/imgs/radiant.avif",
-                    "alt": "Radiant Silvergun",
+                    "alt": "Portada Radiant Silvergun",
                     "link": "generos/juegos/radiant-silvergun"
                 },
                 {
                     "title": "Aero Fighters",
                     "description": "",
                     "img": "/imgs/aero.avif",
-                    "alt": "Aero Fighters",
+                    "alt": "Portada Aero Fighters",
                     "link": "generos/juegos/aero-fighters"
                 }
             ]
@@ -101,21 +101,21 @@
                     "title": "Street Fighter III",
                     "description": "",
                     "img": "/imgs/sfiii.avif",
-                    "alt": "Street Fighter III",
+                    "alt": "Portada Street Fighter III",
                     "link": "generos/juegos/street-fighter-iii"
                 },
                 {
                     "title": "Darkstalker",
                     "description": "",
                     "img": "/imgs/darkstalker.avif",
-                    "alt": "Darkstalker",
+                    "alt": "Portada Darkstalker",
                     "link": "generos/juegos/darkstalker"
                 },
                 {
                     "title": "Garou Mark of the Wolves",
                     "description": "",
                     "img": "/imgs/garou.avif",
-                    "alt": "Garou Mark of the Wolves",
+                    "alt": "Portada Garou Mark of the Wolves",
                     "link": "generos/juegos/garou-mark-of-the-wolves"
                 }
             ]
