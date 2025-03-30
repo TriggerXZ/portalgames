@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import JuegosItem from '../components/JuegosItem.astro';
+import HeroJuegos from '../components/HeroJuegos.astro';
+
+import { JUEGOS } from '../jsons/juegos.json';
+
+---
+
+<Layout title='Run and Gun' description='Run and Gun'>
+    <main class="pt-12">
+        <HeroJuegos title='Run and Gun' description='¡Embárcate en una frenética carrera de balas y acción!'/>
+        <section class="flex flex-col items-center justify-center">
+            <article class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {
+                JUEGOS.filter((juegos) => juegos.genre === 'Run and Gun')
+                    .map((juegos) => (
+                        <JuegosItem {...juegos} />
+                    ))
+                }
+            </article>
+        </section>
+    </main>
+</Layout>
