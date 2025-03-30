@@ -4,12 +4,14 @@ interface Props{
     description: string;
     img: string;
     alt: string;
+    link: string;
 }
 
-const {title, description, img, alt} = Astro.props
+const {title, description, img, alt, link} = Astro.props
 ---
 <div class="m-5 rounded-md text-[#fe6043] text-center md:max-w-[350px]">
+    <a href={link}>
     <img class="rounded-md" src={img}?timestapm={Date.now()} alt={alt} style={{ height: "500px", width: "100%" }}/>
     <h2 class="md:text-2xl text-xl font-bold pt-3">{title}</h2>
-    <p class="text-center">{description}</p>
+    <a/>
 </div>

@@ -1,14 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hero from "../components/Hero.astro";
 ---
 
 <Layout title="Error 404">
-   <Hero title="Error 404" description="La pagina a la que intenta acceder no existe"/>
-</Layout>
-
+    <main class="m-5 rounded-md flex flex-col">
+        <section class="flex pt-12 flex-col justify-center items-center h-50 md:h-[100vh]">
+            <div class="flex flex-col justify-center items-center md:w-[50%]">
+                <h2 class="text-4xl md:text-7xl text-[#fe6043] py-3 font-bold justify-center items-center text-center">
+                    ERROR 404
+                </h2>
+                <p class="text-xl md:text-2xl text-white py-3 font-bold justify-center items-center text-center">
+                    La pagina a la que intenta acceder no existe
+                </p>
+            </div>
+        </section>
+    </main>
 <style>
-    .Hero {
-        color: red;
-    }
 </style>

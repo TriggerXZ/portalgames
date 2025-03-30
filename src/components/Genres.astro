@@ -1,43 +1,14 @@
 ---
 import GenresItem from "./GenresItem.astro";
-const GENRES = [
-    {
-        title: "Beat'em Up",
-        description: "Los clasicos de 'Yo contra el barrio'",
-        img: "/imgs/Capcom.avif",
-        alt: "Imagen de Beat'em Up",
-        link: "/beat-em-up.html",
-    },
-    {
-        title: "Run and Gun",
-        description: "¡Embárcate en una frenética carrera de balas y acción!",
-        img: "/imgs/blazing.avif",
-        alt: "Imagen de Run and Gun",
-        link: "/run-and-gun.html",
-    },
-    {
-        title: "Shoot'em Up",
-        description: "¡Libera un vendaval de balas y enfrenta el caos enérgico!",
-        img: "/imgs/shootem.avif",
-        alt: "Imagen de Shoot'em Up",
-        link: "/shoot-em-up.html",
-    },
-    {
-        title: "Fighting",
-        description: "Domina la arena con los clasicos de la lucha",
-        img: "/imgs/fighting.avif",
-        alt: "Imagen de Fighting",
-        link: "/fighting.html",
-    },
 
-];
+import {GENRES} from "../../juegos.json";
 ---
 
 <section id="genres" class="flex flex-col items-center justify-center">
     <article class="grid grid-cols-1 md:grid-cols-2 gap-3 ">
         {
-            GENRES.map((genres) => (
-                 <GenresItem {...genres} />
+            GENRES.map((genre) => (
+                 <GenresItem {...genre} />
             ))
         }
     </article>
